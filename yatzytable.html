@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
     <title>Yatzy Scoreboard</title>
 </head>
 
@@ -17,15 +18,14 @@
         <li><a href="profile.html">Profile</a></li>
     </ul>
 
-    <hr>
 
     <table>
-        <tr>
-            <th></th>
-            <th>Namn 1</th>
-            <th>Namn 2</th>
-            <th>Namn 3</th>
-            <th>Namn 4</th>
+        <tr id="namn">
+            <th>Spelare/Player</th>
+            <td>Namn 1</td>
+            <td>Namn 2</td>
+            <td>Namn 3</td>
+            <td>Namn 4</td>
         </tr>
         <tr>
             <td>&#x2680 &#x2680 &#x2680 &#x2680 &#x2680 &#x2680</td>
@@ -69,15 +69,15 @@
             <td><input type="number" min="0" max="36" placeholder="0"></td>
             <td><input type="number" min="0" max="36" placeholder="0"></td>
         </tr>
-        <tr>
-            <td><strong>TOTAL</strong></td>
+        <tr id="total">
+            <th>TOTAL</th>
             <td><input type="number" min="0" max="100" placeholder="0"></td>
             <td><input type="number" min="0" max="100" placeholder="0"></td>
             <td><input type="number" min="0" max="100" placeholder="0"></td>
             <td><input type="number" min="0" max="100" placeholder="0"></td>
         </tr>
-        <tr>
-            <td>Bonus</td>
+        <tr id="bonus">
+            <th>Bonus</th>
             <td><input type="number" min="0" max="75" placeholder="0"></td>
             <td><input type="number" min="0" max="75" placeholder="0"></td>
             <td><input type="number" min="0" max="75" placeholder="0"></td>
@@ -181,8 +181,8 @@
             <td><input type="number" min="0" max="100" placeholder="0"></td>
             <td><input type="number" min="0" max="100" placeholder="0"></td>
         </tr>
-        <tr>
-            <td><strong>TOTAL</strong></td>
+        <tr id="total">
+            <th>TOTAL</th>
             <td><input type="number" min="0" max="500" placeholder="0"></td>
             <td><input type="number" min="0" max="500" placeholder="0"></td>
             <td><input type="number" min="0" max="500" placeholder="0"></td>

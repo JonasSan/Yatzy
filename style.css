@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+        background: url(./img/gambling.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: 40%;
+        background-position: right;
+      
+}
+table {
+    border: solid grey;
+    border-collapse: collapse;
+    text-align: left;
+}
+tr:hover {background-color: pink;}
+tr, td {
+    border: solid grey;
+    padding: 5px;
+    font-size: 1.2em;
+}
+th {
+    background-color: darkslategrey;
+    padding: 5px;
+}
+td:nth-child(even) input {background-color: lightgrey;} 
+#namn {
+    background-color: lightgrey;
+}
+#total input {background-color: lightgrey;
+}
+#bonus input {
+    background-color:lightgray;
+}
+a {text-decoration: none;
+font-size: 1.5em;}
+h1  {
+    text-align: center;
+}
+ul {list-style: none;
+}
+li {float:left;
+padding: 10px;
+text-align: center;}
