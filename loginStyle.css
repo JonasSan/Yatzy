@@ -1,0 +1,13 @@
+body {
+    font-family: sans-serif;
+        background: lightgrey;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: 100%;
+        background-position: center;
+      text-align: center
+}
+img {
+    border: red solid;
+}
