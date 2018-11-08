@@ -11,3 +11,6 @@ body {
 img {
     border: red solid;
 }
+a:hover{
+    color: orangered
+}
