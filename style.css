@@ -8,37 +8,99 @@ body {
         background-position: right;
       
 }
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 10em;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    margin-bottom: 15px;
+    top: 0;
+}
+
+#meny {
+    text-align: left;
+    padding: 0;
+}
+
+a{
+    color: rgb(78, 0, 78);
+    padding: 2px;
+
+}
+
+#spacer {
+    height: 150px;
+}
+
+#spacer2 {
+    height: 20px;
+}
+
 table {
+    top: 50%;
     border: solid grey;
     border-collapse: collapse;
     text-align: left;
 }
-tr:hover {background-color: pink;}
+
+td:hover {background-color: pink;}
+
 tr, td {
     border: solid grey;
     padding: 5px;
     font-size: 1.2em;
 }
+
 th {
-    background-color: darkslategrey;
+    background-color: pink;
     padding: 5px;
 }
+
 td:nth-child(even) input {background-color: lightgrey;} 
+
 #namn {
     background-color: lightgrey;
 }
+
 #total input {background-color: lightgrey;
 }
+
 #bonus input {
     background-color:lightgray;
 }
+
 a {text-decoration: none;
 font-size: 1.5em;}
+
 h1  {
     text-align: center;
 }
+
 ul {list-style: none;
 }
-li {float:left;
+
+li {
+    float:left;
 padding: 10px;
-text-align: center;}
+text-align: center;
+}
+
+#dice4, #dice3, #dice5, #dice6 {
+    padding: 10px;
+  animation-duration: 3s;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0); 
+  }
+
+  to {
+    transform: rotate(270deg);
+  }
+}
