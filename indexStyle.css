@@ -9,11 +9,11 @@ body {
         background-size: 100%;  
 }
 input:focus { 
-    background-color: yellow;
+    background-color:gray;
 } 
 
 div {
-    animation-duration: 3s;
+    animation-duration: 2s;
   animation-name: slidein;
 }
 
