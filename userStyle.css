@@ -7,4 +7,25 @@ body {
         background-size: 100%;
         background-position: center;
       text-align: center
+      
 }
+body {
+    
+        animation-duration: 3s;
+        animation-name: slidein;
+      }
+      
+      @keyframes slidein {
+        from {
+          margin-top: 100%;
+          width: 100%;
+        }
+      
+        to {
+    
+          margin-bottom: 10%;
+          width: 100%; 
+        }
+      }
+      body{hover: width 300;}
+      

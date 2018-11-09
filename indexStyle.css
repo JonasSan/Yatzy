@@ -8,8 +8,26 @@ body {
         -o-background-size: cover;
         background-size: 100%;  
 }
+input:focus { 
+    background-color: yellow;
+} 
 
+div {
+    animation-duration: 3s;
+  animation-name: slidein;
+}
 
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 20%;
+    }
+  }
 
 #Center {
     background-color: lightblue;
@@ -37,3 +55,4 @@ body {
     margin: 25px;
 
 }
+
