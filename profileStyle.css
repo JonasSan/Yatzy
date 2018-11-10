@@ -43,3 +43,20 @@ img:hover{
     margin: auto;
 
 }
+
+div {
+    animation-duration: 4s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%; 
+    }
+  
+    to {
+      margin-left: 42%;
+      width: 300px;
+    }
+  }
