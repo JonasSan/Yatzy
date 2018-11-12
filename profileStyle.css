@@ -47,16 +47,25 @@ img:hover{
 div {
     animation-duration: 4s;
   animation-name: slidein;
+  max-width: 20;
 }
 
 @keyframes slidein {
     from {
       margin-left: 100%;
-      width: 100%; 
+      width: 100%;
     }
   
     to {
-      margin-left: 42%;
+      margin-left: 40%;
       width: 300px;
+      padding: 25px;
     }
   }
+  section.div{
+    Display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    }
