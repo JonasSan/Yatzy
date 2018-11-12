@@ -14,3 +14,15 @@ img {
 a:hover{
     color: orangered
 }
+
+@media screen and (min-width:400px) {
+
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    min-width: 150;
+    flex-direction: row;
+    flex-grow: 300;
+    }
