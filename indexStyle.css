@@ -56,3 +56,17 @@ div {
 
 }
 
+/* Flexbox */
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+}
+
+div {
+   max-width: 2; 
+}
+
+
