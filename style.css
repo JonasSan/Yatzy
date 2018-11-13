@@ -132,19 +132,3 @@ input {
 .bonus>td {
   background-color: pink;
 }
-
-.calcButton {
-  padding: 1rem;
-  text-align: center;
-}
-
-#calculate {
-  padding: 0.5rem;
-  background-color: pink;
-  border-style: solid;
-  border-color: grey;
-}
-
-#calculate:hover {
-  background-color: palevioletred;
-}
