@@ -88,7 +88,7 @@ a:hover {
 table {
   border: solid grey;
   border-collapse: collapse;
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
   text-align: left;
 }
 
@@ -131,4 +131,20 @@ input {
 .total>td,
 .bonus>td {
   background-color: pink;
+}
+
+.calcButton {
+  padding: 1rem;
+  text-align: center;
+}
+
+#calculate {
+  padding: 0.5rem;
+  background-color: pink;
+  border-style: solid;
+  border-color: grey;
+}
+
+#calculate:hover {
+  background-color: palevioletred;
 }
