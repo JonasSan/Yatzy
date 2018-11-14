@@ -65,10 +65,10 @@ a:hover {
   margin-bottom: 20px;
 }
 
-#dice4,
-#dice3,
-#dice5,
-#dice6 {
+#rollingDice4,
+#rollingDice3,
+#rollingDice5,
+#rollingDice6 {
   padding: 15px;
   animation-duration: 3s;
   animation-name: rotate;
@@ -130,5 +130,48 @@ input {
 
 .total>td,
 .bonus>td {
+  background-color: pink;
+}
+
+.dices {
+  text-align: center;
+}
+
+#dice1,
+#dice2,
+#dice3,
+#dice4,
+#dice5,
+#dice6 {
+  width: 2rem;
+  height: 2rem;
+  background-color: antiquewhite;
+  border-color: black;
+  border-style: solid;
+  margin-bottom: 1rem;
+}
+
+#roll {
+  background-color: antiquewhite;
+  border-color: black;
+  border-style: solid;
+}
+
+#dice1:hover,
+#dice2:hover,
+#dice3:hover,
+#dice4:hover,
+#dice5:hover,
+#dice6:hover,
+#roll:hover {
+  background-color: pink;
+}
+
+#dice1:,
+#dice2:focus,
+#dice3:focus,
+#dice4:focus,
+#dice5:focus,
+#dice6:focus {
   background-color: pink;
 }

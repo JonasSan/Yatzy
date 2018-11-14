@@ -21,10 +21,10 @@
 
     <div class="container">
         <div class="dices">
-            <img src="./img/Rosa-tärning4.jpg" alt="" id="dice4">
-            <img src="./img/Rosa-tärning3.jpg" alt="" id="dice3">
-            <img src="./img/Rosa-tärning5.jpg" alt="" id="dice5">
-            <img src="./img/Rosa-tärning6.jpg" alt="" id="dice6">
+            <img src="./img/Rosa-tärning4.jpg" alt="" id="rollingDice4">
+            <img src="./img/Rosa-tärning3.jpg" alt="" id="rollingDice3">
+            <img src="./img/Rosa-tärning5.jpg" alt="" id="rollingDice5">
+            <img src="./img/Rosa-tärning6.jpg" alt="" id="rollingDice6">
         </div>
 
         <table>
@@ -37,56 +37,56 @@
             </tr>
             <tr>
                 <td>&#x2680 &#x2680 &#x2680 &#x2680 &#x2680 &#x2680</td>
-                <td><input type="number" min="0" max="6" placeholder="0" id="player1_ones"></td>
+                <td><input type="number" min="0" max="6" value="0" id="player1_ones"></td>
                 <td><input type="number" min="0" max="6" placeholder="0"></td>
                 <td><input type="number" min="0" max="6" placeholder="0"></td>
                 <td><input type="number" min="0" max="6" placeholder="0"></td>
             </tr>
             <tr>
                 <td>&#x2681 &#x2681 &#x2681 &#x2681 &#x2681 &#x2681</td>
-                <td><input type="number" min="0" max="12" placeholder="0" id="player1_twos"></td>
+                <td><input type="number" min="0" max="12" value="0" id="player1_twos"></td>
                 <td><input type="number" min="0" max="12" placeholder="0"></td>
                 <td><input type="number" min="0" max="12" placeholder="0"></td>
                 <td><input type="number" min="0" max="12" placeholder="0"></td>
             </tr>
             <tr>
                 <td>&#x2682 &#x2682 &#x2682 &#x2682 &#x2682 &#x2682</td>
-                <td><input type="number" min="0" max="18" placeholder="0" id="player1_threes"></td>
+                <td><input type="number" min="0" max="18" value="0" id="player1_threes"></td>
                 <td><input type="number" min="0" max="18" placeholder="0"></td>
                 <td><input type="number" min="0" max="18" placeholder="0"></td>
                 <td><input type="number" min="0" max="18" placeholder="0"></td>
             </tr>
             <tr>
                 <td>&#x2683 &#x2683 &#x2683 &#x2683 &#x2683 &#x2683</td>
-                <td><input type="number" min="0" max="24" placeholder="0" id="player1_fours"></td>
+                <td><input type="number" min="0" max="24" value="0" id="player1_fours"></td>
                 <td><input type="number" min="0" max="24" placeholder="0"></td>
                 <td><input type="number" min="0" max="24" placeholder="0"></td>
                 <td><input type="number" min="0" max="24" placeholder="0"></td>
             </tr>
             <tr>
                 <td>&#x2684 &#x2684 &#x2684 &#x2684 &#x2684 &#x2684</td>
-                <td><input type="number" min="0" max="30" placeholder="0" id="player1_fives"></td>
+                <td><input type="number" min="0" max="30" value="0" id="player1_fives"></td>
                 <td><input type="number" min="0" max="30" placeholder="0"></td>
                 <td><input type="number" min="0" max="30" placeholder="0"></td>
                 <td><input type="number" min="0" max="30" placeholder="0"></td>
             </tr>
             <tr>
                 <td>&#x2685 &#x2685 &#x2685 &#x2685 &#x2685 &#x2685</td>
-                <td><input type="number" min="0" max="36" placeholder="0" id="player1_sixes"></td>
+                <td><input type="number" min="0" max="36" value="0" id="player1_sixes"></td>
                 <td><input type="number" min="0" max="36" placeholder="0"></td>
                 <td><input type="number" min="0" max="36" placeholder="0"></td>
                 <td><input type="number" min="0" max="36" placeholder="0"></td>
             </tr>
             <tr class="total">
                 <th>TOTAL</th>
-                <td id="player1_total1"></td>
+                <td id="player1_total1">0</td>
                 <td><input type="number" min="0" max="100" placeholder="0"></td>
                 <td><input type="number" min="0" max="100" placeholder="0"></td>
                 <td><input type="number" min="0" max="100" placeholder="0"></td>
             </tr>
             <tr class="bonus">
                 <th>Bonus</th>
-                <td id="player1_bonus"></td>
+                <td id="player1_bonus">0</td>
                 <td><input type="number" min="0" max="75" placeholder="0"></td>
                 <td><input type="number" min="0" max="75" placeholder="0"></td>
                 <td><input type="number" min="0" max="75" placeholder="0"></td>
@@ -197,6 +197,15 @@
                 <td><input type="number" min="0" max="500" placeholder="0"></td>
             </tr>
         </table>
+        <div class="dices">
+            <button id="dice1">1</button>
+            <button id="dice2">1</button>
+            <button id="dice3">1</button>
+            <button id="dice4">1</button>
+            <button id="dice5">1</button>
+            <button id="dice6">1</button><br>
+            <button id="roll">Roll dices</button>
+        </div>
     </div>
     <script src="js/yatzytable.js"></script>
 </body>
