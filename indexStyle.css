@@ -61,7 +61,6 @@ div {
 section {
     display: flex;
     flex-wrap: wrap;
-    display: flex;
     flex-direction: row;
 }
 

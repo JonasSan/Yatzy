@@ -61,18 +61,27 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   var savedDices = [];
 
+  $(".dices button").click (function()  {
+  //   $(this).css("background-color", "black");
+  });
+
+
   function getDiceNumber() {
+    console.log ("stg");
     for (let i = 1; i <= 6; i++) {
-      return document.getElementById("dice" + i).innerHTML = Math.floor(Math.random() * (7 - 1) + 1);
+    document.getElementById("dice" + i).innerHTML = Math.floor(Math.random() * (7 - 1) + 1);
+       
+    
     }
     //console.log(savedDices);
-  }
-
-  console.log(savedDices);
-
+  };
 
   let roll = document.getElementById("roll");
+
+  console.log(roll);
 
   roll.addEventListener("click", getDiceNumber);
 
 });
+
+
