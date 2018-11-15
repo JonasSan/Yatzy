@@ -146,6 +146,7 @@ input {
   background-color: antiquewhite;
   border-color: black;
   border-style: solid;
+  border-radius: 10%;
   margin: 1rem;
 }
 
