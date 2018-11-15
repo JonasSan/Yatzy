@@ -54,15 +54,22 @@ a:hover {
   color: pink;
 }
 
+.spacerHead {
+  width: 100%;
+  height: 150px;
+}
+
 .container {
   clear: both;
   max-width: 600px;
   margin-left: 25%;
+  text-align: center;
 }
 
 .dices {
-  margin-top: 150px;
-  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  margin: 20px;
 }
 
 #rollingDice4,
@@ -86,9 +93,9 @@ a:hover {
 }
 
 table {
+  width: 100%;
   border: solid grey;
   border-collapse: collapse;
-  margin-bottom: 2rem;
   text-align: left;
 }
 
@@ -133,30 +140,25 @@ input {
   background-color: pink;
 }
 
-.dices {
-  text-align: center;
-}
-
 .dice {
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   background-color: antiquewhite;
   border-color: black;
   border-style: solid;
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
-#dice1,
-#dice2,
-#dice3,
-#dice4,
-#dice5,
-#dice6 {}
+.roller {
+  margin-bottom: 3rem;
+  text-align: center;
+}
 
 #roll {
   background-color: antiquewhite;
   border-color: black;
   border-style: solid;
+  padding: 0.5rem;
 }
 
 #dice1:hover,

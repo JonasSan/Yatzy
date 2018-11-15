@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   //console.log(roll);
 
-  // roll.addEventListener("click", getDiceNumber);
+  roll.addEventListener("click", getDiceNumber);
 
   // while (turnCounter < 3) {
   //   console.log(turnCounter);
