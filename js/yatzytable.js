@@ -98,12 +98,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   // roll.addEventListener("click", getDiceNumber);
 
-  while (turnCounter < 3) {
-    console.log(turnCounter);
-    roll.addEventListener("click", getDiceNumber);
+  // while (turnCounter < 3) {
+  //   console.log(turnCounter);
+  //   roll.addEventListener("click", getDiceNumber);
 
 
-  }
+  // }
   turnCounter = 0;
 
 });
