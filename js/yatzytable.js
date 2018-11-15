@@ -58,32 +58,53 @@ document.addEventListener("DOMContentLoaded", function (event) {
   player1_fives.addEventListener("change", updateTotal1);
   player1_sixes.addEventListener("change", updateTotal1);
 
-  $("#dice1").classList.toggle("visibleDice")
 
   var savedDices = [];
 
-  $(".dices button").click (function()  {
-    $(this).css("background-color", "black");
-    console.log($(this).val());
-   
+  $(".dice").click(function () {
+    console.log($(this).text());
+    $(this).toggleClass("visibleDice");
   });
 
+  let turnCounter = 0;
 
   function getDiceNumber() {
-    console.log ("stg");
+    turnCounter++;
+    console.log("stg");
     for (let i = 1; i <= 6; i++) {
-    document.getElementById("dice" + i).innerHTML = Math.floor(Math.random() * (7 - 1) + 1);
-       
-    
+      if ($("#dice" + i).hasClass('visibleDice') == false) {
+        document.getElementById("dice" + i).innerHTML = Math.floor(Math.random() * (7 - 1) + 1);
+      } else {
+        continue;
+      }
     }
     //console.log(savedDices);
   };
 
-  let roll = document.getElementById("roll");
+  // $("#roll").click(function () {
+  //   console.log("stg");
+  //   for (let i = 1; i <= 6; i++) {
+  //     if ($("#dice" + i).hasClass('visibleDice') == false) {
+  //       document.getElementById("dice" + i).innerHTML = Math.floor(Math.random() * (7 - 1) + 1);
+  //     } else {
+  //       continue;
+  //     }
+  //   }
+  // });
 
-  console.log(roll);
+  var roll = document.getElementById("roll");
 
-  roll.addEventListener("click", getDiceNumber);
+  //console.log(roll);
+
+  // roll.addEventListener("click", getDiceNumber);
+
+  while (turnCounter < 3) {
+    console.log(turnCounter);
+    roll.addEventListener("click", getDiceNumber);
+
+
+  }
+  turnCounter = 0;
 
 });
 

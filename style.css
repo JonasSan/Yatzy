@@ -137,12 +137,7 @@ input {
   text-align: center;
 }
 
-#dice1,
-#dice2,
-#dice3,
-#dice4,
-#dice5,
-#dice6 {
+.dice {
   width: 2rem;
   height: 2rem;
   background-color: antiquewhite;
@@ -150,6 +145,13 @@ input {
   border-style: solid;
   margin-bottom: 1rem;
 }
+
+#dice1,
+#dice2,
+#dice3,
+#dice4,
+#dice5,
+#dice6 {}
 
 #roll {
   background-color: antiquewhite;
@@ -167,16 +169,15 @@ input {
   background-color: pink;
 }
 
-#dice1:focus,
+/* #dice1:focus,
 #dice2:focus,
 #dice3:focus,
 #dice4:focus,
 #dice5:focus,
 #dice6:focus {
   background-color: pink;
-}
+} */
 
-.visibleClass {
-
-  background-color: brown;
+.visibleDice {
+  background-color: gray;
 }
