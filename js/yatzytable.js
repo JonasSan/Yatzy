@@ -58,11 +58,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
   player1_fives.addEventListener("change", updateTotal1);
   player1_sixes.addEventListener("change", updateTotal1);
 
+  $("#dice1").classList.toggle("visibleDice")
 
   var savedDices = [];
 
   $(".dices button").click (function()  {
-  //   $(this).css("background-color", "black");
+    $(this).css("background-color", "black");
+    console.log($(this).val());
+   
   });
 
 

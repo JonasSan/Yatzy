@@ -167,11 +167,16 @@ input {
   background-color: pink;
 }
 
-#dice1:,
+#dice1:focus,
 #dice2:focus,
 #dice3:focus,
 #dice4:focus,
 #dice5:focus,
 #dice6:focus {
   background-color: pink;
+}
+
+.visibleClass {
+
+  background-color: brown;
 }
