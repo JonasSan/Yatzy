@@ -71,6 +71,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
   function getDiceNumber() {
     turnCounter++;
     console.log("stg");
+    console.log("räknare " + turnCounter);
+    // console.log("räknare " + turnCounter);
     for (let i = 1; i <= 6; i++) {
       if ($("#dice" + i).hasClass('visibleDice') == false) {
         document.getElementById("dice" + i).innerHTML = Math.floor(Math.random() * (7 - 1) + 1);
@@ -79,8 +81,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
     //console.log(savedDices);
+    if(turnCounter % 3 == 0){
+      for (let i = 1; i <= 6; i++) {
+        if ($("#dice" + i).hasClass('visibleDice') == true) {
+          $("dice" + i).toggleClass("visibleDice");
+        } else {
+          continue;
+        }
+      }
+      // $("#dice1" + "#dice2" + "#dice3" + "#dice4" + "#dice5" + "#dice6").removeClass('visableDice') = false; //Hur nollställa dices?
+      console.log("Next player"); //Programmet kör denna del när sidan laddats upp och inte mer, varför?
+      return document.getElementById("nextPlayer").innerHTML = "Next Player";
+    } else{
+      return document.getElementById("nextPlayer").innerHTML = ""; 
+    }
   };
-
   // $("#roll").click(function () {
   //   console.log("stg");
   //   for (let i = 1; i <= 6; i++) {
@@ -101,6 +116,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
   // while (turnCounter < 3) {
   //   console.log(turnCounter);
   //   roll.addEventListener("click", getDiceNumber);
+
+  //console.log(savedDices);
 
 
   // }
