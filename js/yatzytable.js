@@ -81,10 +81,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
     //console.log(savedDices);
-    if(turnCounter % 3 == 0){
+    if (turnCounter % 3 == 0) {
       for (let i = 1; i <= 6; i++) {
+        // $("#dice" + i).text('1');
         if ($("#dice" + i).hasClass('visibleDice') == true) {
-          $("dice" + i).toggleClass("visibleDice");
+          $("#dice" + i).toggleClass('visibleDice');
         } else {
           continue;
         }
@@ -92,8 +93,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
       // $("#dice1" + "#dice2" + "#dice3" + "#dice4" + "#dice5" + "#dice6").removeClass('visableDice') = false; //Hur nollställa dices?
       console.log("Next player"); //Programmet kör denna del när sidan laddats upp och inte mer, varför?
       return document.getElementById("nextPlayer").innerHTML = "Next Player";
-    } else{
-      return document.getElementById("nextPlayer").innerHTML = ""; 
+    } else {
+      return document.getElementById("nextPlayer").innerHTML = "";
     }
   };
   // $("#roll").click(function () {
@@ -124,5 +125,3 @@ document.addEventListener("DOMContentLoaded", function (event) {
   turnCounter = 0;
 
 });
-
-
